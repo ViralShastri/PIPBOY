@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FALLOUT 4 - PIPBOY</title>
+    <link rel="icon" href="IAMGES\pip-icon.png" type="image/icon type">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS\pipboy.app.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+
+            <ul class="navbar-nav nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link" href="stat.html">STAT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inv.html">INV</a>
+                </li>
+                <li class="nav-item active d">
+                    <a class="nav-link" href="data.html">DATA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="map.html">MAP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="radio.html">RADIO</a>
+                </li>
+            </ul>
+
+        </div>
+
+
+    </nav>
+
+    <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-tabs ">
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab"  href="#weapons">FILES</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+    <div class="tab-pane active" id="weapons" role="tabpanel">
+        <ul class="item-list">
+            <li><a href="#" value="file_1" class="file_1 active">FILE 1</a></li>
+            <li><a href="#" value="file_2" class="file_2">FILE 2</a></li>
+            <li><a href="#" value="file_3" class="file_3">FILE 3</a></li>
+        </ul>
+        <div class="item-text">
+            <p>
+                Bradlee,<br>Look, I know you've doubted me since we killed that guy who came into our camp, but this is how we do things. I don't have time to try and figure out if a newcomer is trustworthy or if he's gonna slit all our throats the first night. I don't see it as a choice. I see a stranger, I kill them. It's for the good of the group.
+            </p>
+        </div>
+
+    </div>
+        
+
+    <navbar class="navbar navbar-light pip-footer">
+        <div class="col-2"> HP 90/90</div>
+        <div class="col-8 text-center"> LEVEL 1
+            <div class="level-progress">
+                <div class="level-progress-indicator" width="70%"></div>
+            </div>
+        </div>
+        <div class="col-2 text-right"> AP 70/70</div>
+    </navbar>
+
+
+
+
+
+
+
+
+
+
+    <!--Scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/pipboy.app.js"></script>
+</body>
+
+</html>

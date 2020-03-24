@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FALLOUT 4 - PIPBOY</title>
+    <link rel="icon" href="IAMGES\pip-icon.png" type="image/icon type">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/8184f3c075.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS\pipboy.app.css">
+    <style>
+        #preloader_1 {
+            position: absolute;
+            left: 45%;
+            top: 60%;
+            background: #ECF0F1;
+
+        }
+
+        #preloader_1 span {
+            display: block;
+            bottom: 0px;
+            width: 10px;
+            height: 100 px;
+            background: #14fe17;
+            position: absolute;
+            animation: preloader_1 1.5s infinite ease-in-out;
+
+        }
+
+        #preloader_1 span:nth-child(2) {
+            left: 50px;
+            animation-delay: .2s;
+
+        }
+
+        #preloader_1 span:nth-child(3) {
+            left: 100px;
+            animation-delay: .4s;
+        }
+
+        #preloader_1 span:nth-child(4) {
+            left: 150px;
+            animation-delay: .6s;
+        }
+
+        #preloader_1 span:nth-child(5) {
+            left: 200px;
+            animation-delay: .8s;
+        }
+
+        @keyframes preloader_1 {
+            0% {
+                height: 100px;
+                transform: translateY(0px);
+                background:#14fe17;
+            }
+
+            25% {
+                height: 300px;
+                transform: translateY(100px);
+                background: #14fe17;
+            }
+
+            50% {
+                height: 100px;
+                transform: translateY(0px);
+                background: #14fe17;
+            }
+
+            100% {
+                height: 300px;
+                transform: translateY(0px);
+                background: #14fe17;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link" href="stat.html">STAT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inv.html">INV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">DATA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="map.html">MAP</a>
+                </li>
+                <li class="nav-item active r">
+                    <a class="nav-link" href="radio.html">RADIO</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="waveform">
+            <div class="audio-button">
+                 <button  class="btn btn-primary" id="play" onclick="play()"><i class="fas fa-play"></i></button>
+                 <button  class="btn btn-primary" id="play" onclick="pause()"><i class="fas fa-pause"></i></button>
+             </div>
+        <ul class="item-list">
+            <li><a href="#" value="radio_msg_1" class="radio_msg_1 active">RADIO MESSAGE 1</a></li>
+            <li><a href="#" value="radio_msg_2" class="radio_msg_2">RADIO MESSAGE 2</a></li>
+            <li><a href="#" value="radio_msg_3" class="radio_msg_3">RADIO MESSAGE 3</a></li>
+        </ul>
+        <audio src="MUSIC/01.mp3" id="r-audio"></audio>
+    </div>
+
+    <div id="" class="preloader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+    <navbar class="navbar navbar-light pip-footer">
+        <div class="col-2"> HP 90/90</div>
+        <div class="col-8 text-center"> LEVEL 1
+            <div class="level-progress">
+                <div class="level-progress-indicator" width="70%"></div>
+            </div>
+        </div>
+        <div class="col-2 text-right"> AP 70/70</div>
+    </navbar>
+
+
+
+
+
+
+
+
+
+
+    <!--Scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/pipboy.app.js"></script>
+</body>
+
+</html>

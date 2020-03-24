@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FALLOUT 4 - PIPBOY</title>
+    <link rel="icon" href="IAMGES\pip-icon.png" type="image/icon type">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS\pipboy.app.css">
+
+    <style> 
+    html{
+  min-height: 100%;
+}
+body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+    border-top: 4px solid;
+    border-bottom: 4px solid;
+    margin: 3%;
+}
+.line-1{
+    position: relative;
+    top: 20%;  
+    width: 40em;
+    margin: 0 auto;
+    font-size: 150%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 40em;}
+}
+
+.land-img img{
+    margin: auto;
+    display: block;
+    position: relative;
+    max-height:250px;
+    margin-top: -20px;
+    margin-left: 38%;
+    filter: grayscale(1) sepia(100%) hue-rotate(55deg) saturate(6) brightness(1) contrast(.9);
+    }
+
+.link > a
+{
+    float: right;
+    margin-right: -50px;
+    margin-top: 11%;
+    font-size: 20px;
+    text-decoration: none;
+    color: #14fe17 !important;
+    padding: 5px;
+}
+
+.link > a:hover
+{
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+    </style>
+
+</head>
+
+<body>
+    <div class="land-img">
+        <img src="IAMGES\land-pip.png">
+    </div>
+    <p class="line-1 anim-typewriter">
+         Your Hardwork and Dedication finally paid off!!
+    </p>
+    <br>
+    <p class="line-1 anim-typewriter">
+        Landing on the front page has increased your Science and Charishma by 1.
+    </p>
+    <span class="link">
+        <a href="stat.html"> Click to Continue --></a>
+    </span>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FALLOUT 4 - PIPBOY</title>
+    <link rel="icon" href="IAMGES\pip-icon.png" type="image/icon type">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS\pipboy.app.css">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-md navbar-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+
+            <ul class="navbar-nav nav-fill">
+                <li class="nav-item active">
+                    <a class="nav-link" href="stat.html">STAT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="inv.html">INV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">DATA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="map.html">MAP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="radio.html">RADIO</a>
+                </li>
+            </ul>
+
+        </div>
+
+
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav nav-tabs ">
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#status">STATUS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link child2" data-toggle="tab" href="#special">SPECIAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link child3" data-toggle="tab" href="#perks">PERKS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="status" role="tabpanel">
+            <div class="center-image">
+                <img src="IAMGES\pipboy.png" />
+            </div>
+            <div class="stat-bars">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="stat-bar">
+                            <div class="level-progress">
+                                <div class="level-progress-indicator w40"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <div class="stat-bar">
+                            <div class="level-progress">
+                                <div class="level-progress-indicator w70"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                    </div>
+                    <div class="col-3">
+                        <div class="stat-bar">
+                            <div class="level-progress">
+                                <div class="level-progress-indicator w20"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <div class="stat-bar">
+                            <div class="level-progress">
+                                <div class="level-progress-indicator w90"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                    </div>
+                    <div class="col-3">
+                        <div class="stat-bar">
+                            <div class="level-progress">
+                                <div class="level-progress-indicator w30"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="stat-bar">
+                            <div class="level-progress">
+                                <div class="level-progress-indicator w30"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row stat-numbers">
+                <div class="space-div"></div>
+                <div class="col-2">
+                    <img src="IAMGES\icon-gun.png">
+                </div>
+                <div class="col-1">
+                    <div class="icon">
+                        <img class="sm-img" src="IAMGES\icon-crosshair.png">
+                    </div>
+                    <div class="points" style="margin-left: -1px;">0</div>
+                </div>
+                <div class="col-1 transparent"></div>
+                <div class="col-2">
+                    <img class="" style="width: 115%; margin-left: -3px;" src="IAMGES\icon-helmet.png">
+                </div>
+                <div class="col-1">
+                    <div class="icon">
+                        <img class="sm-img" src="IAMGES\icon-lightning.png">
+                    </div>
+                    <div class="points">18</div>
+                </div>
+                <div class="col-1">
+                    <div class="icon">
+                        <img class="sm-img" src="IAMGES\icon-radioactive.png">
+                    </div>
+                    <div class="points">18</div>
+                </div>
+                <div class="col-2 transparent"></div>
+            </div>
+            <div class="pip-name">
+                V I R A L
+            </div>
+        </div>
+        <div class="tab-pane" id="special" role="tabpanel">
+            <div class="container" style="margin-top:12%;margin-left:25.5%;font-size: 70px;">
+
+                <img src="IAMGES/lock.png" alt="" style="filter: grayscale(1) brightness(200) contrast(0) sepia(100%) hue-rotate(55deg)  saturate(20);width: 70px;height: 70px;margin-top:-35px;"> UNLOCK ON LEVEL 5
+
+            </div>
+        </div>
+        <div class="tab-pane" id="perks" role="tabpanel">
+            <div class="container" style="margin-top:12%;margin-left:25.5%;font-size: 70px;">
+
+                <img src="IAMGES/lock.png" alt="" style="filter: grayscale(1) brightness(200) contrast(0) sepia(100%) hue-rotate(55deg)  saturate(20);width: 70px;height: 70px;margin-top:-35px;"> UNLOCK ON LEVEL 10
+
+            </div>
+        </div>
+    </div>
+
+    <navbar class="navbar navbar-light pip-footer">
+        <div class="col-2"> HP 90/90</div>
+        <div class="col-8 text-center"> LEVEL 1
+            <div class="level-progress">
+                <div class="level-progress-indicator" width="70%"></div>
+            </div>
+        </div>
+        <div class="col-2 text-right"> AP 70/70</div>
+    </navbar>
+
+
+    <!--scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="JS/pipboy.app.js"></script>
+
+    <!--/scripts -->
+
+</body>
+
+</html>
